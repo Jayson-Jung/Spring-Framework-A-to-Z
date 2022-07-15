@@ -1,0 +1,38 @@
+package com.multicampus.controller.board;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.multicampus.biz.board.BoardDAO;
+import com.multicampus.biz.board.BoardDAOJDBC;
+import com.multicampus.biz.board.BoardVO;
+
+@Controller
+public class GetBoardListController {
+
+	@RequestMapping("/getBoardList.do")
+	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		System.out.println("글 목록 검색 처리");
+		
+		// 1. DB 연동 처리
+		BoardVO vo = new BoardVO();
+		BoardDAO boardDAO = new BoardDAOJDBC();
+		List<BoardVO> boardList = boardDAO.getBoardList(vo);
+		
+		// 2. Model(DAO)을 이용하여 검색한 결과 데이터를 View(JSP)에서 사용할 수 있도록 세션에 등록한다.
+		HttpSession session = request.getSession();
+		session.setAttribute("boardList", boardList);
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("getBoardList.jsp"); // 이동할 화면 정보 저장		
+		return mav;
+	}
+
+}

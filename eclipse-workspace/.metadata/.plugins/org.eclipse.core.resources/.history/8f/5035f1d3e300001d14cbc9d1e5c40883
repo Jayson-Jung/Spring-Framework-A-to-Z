@@ -1,0 +1,20 @@
+package com.multicampus.biz.collection;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class CollectionUser {
+
+	public static void main(String[] args) {
+		GenericXmlApplicationContext container = 
+			new GenericXmlApplicationContext("applicationContext.xml");
+		
+		CollectionBean bean = (CollectionBean) container.getBean("addressList");
+		String[] collection = bean.getAddressList();
+		
+		System.out.println("[주소 목록]");
+		for (String address : collection) {
+			System.out.println("---> " + address.toString());
+		}
+	}
+
+}

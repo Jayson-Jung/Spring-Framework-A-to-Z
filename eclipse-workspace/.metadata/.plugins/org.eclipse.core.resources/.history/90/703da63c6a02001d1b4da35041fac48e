@@ -1,0 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%
+	// 1. Redirect 방식의 화면이동
+	response.sendRedirect("b.jsp");
+%>

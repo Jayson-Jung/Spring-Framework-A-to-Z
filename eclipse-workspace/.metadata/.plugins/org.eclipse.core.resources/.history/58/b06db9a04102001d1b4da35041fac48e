@@ -1,0 +1,13 @@
+package com.multicampus.biz.board;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowCallbackHandler;
+import org.springframework.jdbc.core.RowMapper;
+
+public class BoardRowMapper implements RowMapper<BoardVO> {
+
+
+
+}

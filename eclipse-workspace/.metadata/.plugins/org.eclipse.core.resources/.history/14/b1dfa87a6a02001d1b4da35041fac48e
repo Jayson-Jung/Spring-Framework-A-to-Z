@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%
+	// 1. Redirect 방식의 화면 이동
+	// response.sendRedirect("b.jsp");
+	// 2. Forward 방식의 화면 이동
+	RequestDispatcher dispatcher = request.getRequestDispatcher("b.jsp");
+	dispatcher.forward(request, response);
+%>

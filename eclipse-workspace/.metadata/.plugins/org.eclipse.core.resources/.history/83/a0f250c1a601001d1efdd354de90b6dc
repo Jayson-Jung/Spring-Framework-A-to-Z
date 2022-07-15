@@ -1,0 +1,38 @@
+package com.multicampus.biz.common;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class AroundAdvice {
+	
+	public Object aroundLog(ProceedingJoinPoint jp) throws Throwable {
+		Object returnObj = null;
+		
+		System.out.println("---[ Before Logic ]---");
+		
+		returnObj = jp.proceed();
+		
+		System.out.println("---[ After  Logic ]---");
+		
+		return returnObj;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

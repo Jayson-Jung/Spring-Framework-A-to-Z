@@ -1,0 +1,58 @@
+1657504116396	Copy compilation unit
+1657504268985	Copy package
+1657504277498	Delete element
+1657504406351	Extract interface 'TV'
+1657504540476	Rename package 'polymorphism1'
+1657505764638	Copy package
+1657506424967	Copy compilation unit
+1657506690733	Delete element
+1657517057450	Copy compilation unit
+1657517250047	Extract interface 'Speaker'
+1657585343599	Extract interface 'BoardService'
+1657589130082	Extract interface 'UserService'
+1657589589116	Copy package
+1657589630372	Rename type 'BoardServiceClient'
+1657590793858	Delete element
+1657591005991	Delete element
+1657592349106	Copy compilation unit
+1657599576505	Delete element
+1657601495220	Copy compilation unit
+1657602847118	Copy compilation unit
+1657604745959	Copy compilation unit
+1657610306172	Copy compilation unit
+1657672399589	Rename type 'BoardDAO'
+1657672455203	Extract interface 'BoardDAO'
+1657676736974	Delete element
+1657684393804	Copy file
+1657684775936	Copy file
+1657689186619	Delete elements
+1657691421072	Delete elements
+1657694453668	Copy compilation unit
+1657694472320	Delete element
+1657695561563	Copy compilation unit
+1657695572342	Copy compilation unit
+1657695578497	Copy compilation unit
+1657695585198	Copy compilation unit
+1657698706469	Copy compilation unit
+1657698886804	Delete element
+1657758274588	Rename resource 'action-servlet.xml'
+1657758284308	Move 'presentation-layer.xml' to 'config'
+1657761991309	Delete elements
+1657762560747	Delete element
+1657764672271	Delete element
+1657764729572	Move 'web.xml' to 'WebContent'
+1657764746308	Move 'web.xml' to 'WEB-INF'
+1657764784814	Move 4 resources to 'board'
+1657766371905	Move 'board' to 'multicampus'
+1657766434839	Move 'board' to 'WEB-INF'
+1657766447430	Delete element
+1657779529831	Delete element
+1657781177172	Delete element
+1657845089587	Rename resource 'arithmeticError.jsp'
+1657846227017	Delete element
+1657846924634	Move 'commons' to 'board'
+1657848515232	Copy file
+1657848535474	Rename resource 'business-layer.xml'
+1657849598012	Delete element
+1657849626167	Delete element
+1657849628000	Delete element

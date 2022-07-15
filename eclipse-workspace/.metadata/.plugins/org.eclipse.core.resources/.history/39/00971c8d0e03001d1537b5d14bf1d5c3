@@ -1,0 +1,31 @@
+package com.multicampus.controller.board;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.multicampus.biz.board.BoardDAO;
+import com.multicampus.biz.board.BoardDAOJDBC;
+import com.multicampus.biz.board.BoardVO;
+
+@Controller
+public class InsertBoardController {
+
+	@RequestMapping("/insertBoard.do")
+	public void ³»¸¾´ë·Î(BoardVO vo) throws Exception {
+		System.out.println(vo.getTitle());
+		System.out.println(vo.getWriter());
+		System.out.println(vo.getContent());
+		BoardDAO boardDAO = new BoardDAOJDBC();
+		boardDAO.insertBoard(vo);
+	}
+
+}
+
+
+
+
+
+
+

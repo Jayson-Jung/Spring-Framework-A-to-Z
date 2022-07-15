@@ -1,0 +1,44 @@
+package com.multicampus.biz.common;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.springframework.stereotype.Service;
+import org.springframework.util.StopWatch;
+
+@Service("around")              
+public class AroundAdvice {
+	
+	public Object aroundLog(ProceedingJoinPoint jp) throws Throwable {
+		String method = jp.getSignature().toShortString();
+		System.out.println(method);
+		Object returnObj = null;
+//		StopWatch watch = new StopWatch();
+//		watch.start();
+//		
+//		returnObj = jp.proceed(); // 실제 비즈니스 메소드가 실해되는 시점
+//		
+//		watch.stop();
+//		System.out.println("비즈니스 메소드 수행에 소요된 시간 : " + watch.getTotalTimeSeconds() + "초");
+//		
+		return returnObj;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

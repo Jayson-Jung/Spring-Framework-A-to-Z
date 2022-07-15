@@ -1,0 +1,14 @@
+package com.multicampus.biz.collection;
+
+public class CollectionBean {
+
+	private String[] addressList = {"신림동", "면목동"};
+
+	public String[] getAddressList() {
+		return addressList;
+	}
+
+	public void setAddressList(String[] addressList) {
+		this.addressList = addressList;
+	}	
+}

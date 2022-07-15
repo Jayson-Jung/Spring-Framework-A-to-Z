@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sqlmap>
+	<insert id="insertBoard" parameterClass="com.multicampus.biz.board.BoardVO">
+		insert into board(seq, title, writer, content) values((select nvl(max(seq), 0)+1 from board),?,?,?)
+	</insert>
+	
+	<update id="updateBoard">
+		update board set title=?, content=? where seq=?
+	</update>
+	
+	<delete id="deleteBoard">
+		delete board where seq=?
+	</delete>
+	
+	<select id="getBoard">
+		select * from board where seq=?
+	</select>
+	
+	<select id="getBoardList">
+		select * from board order by seq desc
+	</select>
+	
+</sqlmap>

@@ -1,0 +1,13 @@
+package com.multicampus.biz.board;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class BoardServiceClient {
+
+	public static void main(String[] args) {
+		GenericXmlApplicationContext container = 
+			new GenericXmlApplicationContext("business-layer.xml");
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.multicampus.controller.common;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+public class ContextLoaderListener implements ServletContextListener {
+
+    public ContextLoaderListener() {
+        System.out.println("===> ContextLoaderListener 생성");
+    }
+
+    public void contextDestroyed(ServletContextEvent arg0)  { 
+         System.out.println("---> contextDestroyed() 호출");
+    }
+
+    public void contextInitialized(ServletContextEvent arg0)  { 
+    	System.out.println("---> contextInitialized() 호출");
+        System.out.println("여기에서 스프링 컨테이너를 생성하면 됩니다.");         
+    }
+	
+}

@@ -1,0 +1,31 @@
+package com.multicampus.biz.board;
+
+import java.sql.Date;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+// 1. VO(Value Object) Å¬·¡½º
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
+public class BoardVO {
+	private int seq;
+	private String titlesdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdf;
+	private String writer;
+	private String content;
+	private Date regDate;
+	private int cnt;
+}
+
+
+
+
+
+
+
+
+
